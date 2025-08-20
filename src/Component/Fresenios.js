@@ -667,6 +667,18 @@ function Fresenius() {
     }
 
     useEffect(() => {
+        if (openDots) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        return () => {
+            document.body.style.overflow = "auto"; // cleanup
+        };
+    }, [openDots]);
+
+    useEffect(() => {
         if (showStory) {
             document.body.style.overflow = "hidden";
         } else {
@@ -816,7 +828,7 @@ function Fresenius() {
             {/* Dots page */}
             {
                 openDots && (
-                    <div className="share-services">
+                    <div className={`share-services ${openDots?'show':''}`}>
                         <div className="section">
                             <span className="title">Share</span>
                             <a href="https://www.facebook.com/">

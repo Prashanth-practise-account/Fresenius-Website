@@ -34,6 +34,21 @@ npm start
 
 
 
+## 📂 Project Structure
+
+fresinus.com/
+│── public/
+│── src/
+│ ├── component/
+│ │ ├── Fresenios.js
+│ │ ├── style.css
+│ │ 
+│ ├── App.js
+│ ├── index.js
+│ └── App.css
+│── package.json
+└── README.md
+
 
 
 

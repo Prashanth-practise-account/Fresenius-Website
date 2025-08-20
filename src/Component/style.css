@@ -2971,8 +2971,8 @@ footer {
 }
 
 .share-services {
-    position: absolute;
-    top: 5px;
+    /* position: absolute; */
+    /* top: 5px; */
     background-color: #E8EDF3;
     transition: bottom 0.9s ease;
     border: 1px solid #ccc;
@@ -2983,8 +2983,11 @@ footer {
     justify-content: space-evenly;
     min-width: 200px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
 }
-
+.share-services.show{
+    top: 75px;
+}
 .share-services i {
     color: black;
     font-size: xx-large;
