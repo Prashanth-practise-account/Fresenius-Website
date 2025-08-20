@@ -21,16 +21,17 @@ Fresinus.com is a corporate-style website inspired by Fresenius, designed to sho
 
 5.Smooth scrolling between sections
 
-# To Run The Project
+# To Run The Project 
 
 1. # Go into project folder
 cd fresinus.com
 
-2. # Install dependencies
-npm install
+2. # Install Flask:
+pip install flask
 
-3. # Run development server
-npm start
+3. # Run Flask server:
+python app.py
+Open http://localhost:5000/ to see the website served by Python.
 
 
 
@@ -46,6 +47,8 @@ fresinus.com/
 │ ├── App.js
 │ ├── index.js
 │ └── App.css
+├─ backend/
+│ └─ app.py
 │── package.json
 └── README.md
 
